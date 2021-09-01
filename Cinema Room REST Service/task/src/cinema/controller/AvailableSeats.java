@@ -3,18 +3,14 @@ package cinema.controller;
 import cinema.entity.CinemaPlan;
 import cinema.entity.DTO.PurchaseDTO;
 import cinema.entity.DTO.ReturnDTO;
-import cinema.entity.DTO.SeatDTO;
 import cinema.entity.Seat;
 import cinema.entity.Statistics;
 import cinema.entity.Token;
-import cinema.exceptions.CinemaPlanException;
 import cinema.exceptions.SecurityException;
 import cinema.service.CinemaPlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Optional;
 
 @RestController
 public class AvailableSeats {
